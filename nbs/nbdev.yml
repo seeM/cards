@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "cards"
+  site-url: "https://seeM.github.io/cards"
+  description: "A minimal example of nbdev based on Allen Downey's Think Python 2nd Ed"
+  repo-branch: main
+  repo-url: "https://github.com/seeM/cards"
