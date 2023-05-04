@@ -11,6 +11,8 @@ from collections.abc import MutableSequence
 
 # %% ../nbs/01_deck.ipynb 5
 class Deck(MutableSequence):
+    "A collection of `Card`s."
+    
     def __init__(self):
         self.cards = []
         for suit in range(4):
