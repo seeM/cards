@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "card.html",
+    "href": "card.html",
+    "title": "Card",
+    "section": "",
+    "text": "There are 52 cards in a standard playing card deck.\nThere are 4 suits:\n\nsuits\n\n['♣️', '♦️', '❤️', '♠️']\n\n\nAnd there are 14 ranks:\n\nranks\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\n\n\nNote that the first rank is None so that numeric ranks correspond to their indices. For example:\n\nranks[5]\n\n'5'\n\n\n\nsource\n\nCard\n\n Card (suit=0, rank=1)\n\nA standard playing card.\nCreate a card by passing in numbers representing its suit and rank:\n\ncard = Card(suit=2, rank=12)\ncard\n\nQ❤️\n\n\n\nassert repr(Card()) == \"A♣️\"\n\nYou can compare two cards using Python’s built-in operators:\n\nassert Card(suit=0, rank=2) &lt; Card(suit=0, rank=10)\nassert Card(suit=0, rank=2) &lt; Card(suit=1, rank=2)\nassert Card(suit=1, rank=2) &gt; Card(suit=0, rank=2)\nassert Card(suit=0, rank=2) == Card(suit=0, rank=2)"
+  },
+  {
+    "objectID": "deck.html",
+    "href": "deck.html",
+    "title": "Deck",
+    "section": "",
+    "text": "source\n\nDeck\n\n Deck ()\n\nA collection of standard playing cards.\nDecks start out with 52 cards.\n\ndeck = Deck()\ndeck\n\nA♣️ 2♣️ 3♣️ 4♣️ 5♣️ 6♣️ 7♣️ 8♣️ 9♣️ 10♣️ J♣️ Q♣️ K♣️ A♦️ 2♦️ 3♦️ 4♦️ 5♦️ 6♦️ 7♦️ 8♦️ 9♦️ 10♦️ J♦️ Q♦️ K♦️ A❤️ 2❤️ 3❤️ 4❤️ 5❤️ 6❤️ 7❤️ 8❤️ 9❤️ 10❤️ J❤️ Q❤️ K❤️ A♠️ 2♠️ 3♠️ 4♠️ 5♠️ 6♠️ 7♠️ 8♠️ 9♠️ 10♠️ J♠️ Q♠️ K♠️\n\n\n\nassert len(deck) == 52\n\nDecks behave like ordinary Python lists, so you can draw a card from the top of the deck (end of the list) with pop:\n\nassert repr(deck.pop()) == \"K♠️\""
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "cards",
+    "section": "",
+    "text": "pip install cards"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "cards",
+    "section": "",
+    "text": "pip install cards"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "cards",
+    "section": "How to use",
+    "text": "How to use\n\nfrom cards.deck import Deck\n\nCreate a Deck of standard playing cards:\n\ndeck = Deck()\ndeck\n\nA♣️ 2♣️ 3♣️ 4♣️ 5♣️ 6♣️ 7♣️ 8♣️ 9♣️ 10♣️ J♣️ Q♣️ K♣️ A♦️ 2♦️ 3♦️ 4♦️ 5♦️ 6♦️ 7♦️ 8♦️ 9♦️ 10♦️ J♦️ Q♦️ K♦️ A❤️ 2❤️ 3❤️ 4❤️ 5❤️ 6❤️ 7❤️ 8❤️ 9❤️ 10❤️ J❤️ Q❤️ K❤️ A♠️ 2♠️ 3♠️ 4♠️ 5♠️ 6♠️ 7♠️ 8♠️ 9♠️ 10♠️ J♠️ Q♠️ K♠️\n\n\nDecks work like ordinary Python lists. Draw a Card from the deck with deck.pop:\n\ncard = deck.pop()\ncard\n\nK♠️"
+  }
+]
